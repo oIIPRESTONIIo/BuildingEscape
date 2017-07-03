@@ -29,7 +29,7 @@ void UOpenDoor::OpenDoor()
 	DoorOpen = true;
 	AActor* Owner = GetOwner();
 
-	FRotator NewRotation(FRotator(0.0f, 20.0f, 0.0f));
+	FRotator NewRotation(FRotator(0.0f, -80.0f, 0.0f));
 
 	Owner->SetActorRotation(NewRotation);
 }
@@ -39,7 +39,7 @@ void UOpenDoor::CloseDoor()
 	DoorOpen = false;
 	AActor* Owner = GetOwner();
 
-	FRotator NewRotation(FRotator(0.0f, 90.0f, 0.0f));
+	FRotator NewRotation(FRotator(0.0f, 0.0f, 0.0f));
 
 	Owner->SetActorRotation(NewRotation);
 }
